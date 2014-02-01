@@ -31,5 +31,7 @@
         toggleClass(menu, active);
         toggleClass(menuLink, active);
     };
-
+    hljs.tabReplace = '  '; // 2 spaces
+    //$("#blog-logo").prependTo("#site-head-content");
+    hljs.initHighlightingOnLoad();
 }(this, this.document));
