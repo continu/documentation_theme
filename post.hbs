@@ -6,14 +6,12 @@
 <main class="content push" role="main">
     <article class="{{post_class}} push">
         {{#post}}
-        <div class="header">
-            <h1>{{title}}</h1>
-            {{#if author}}
-                <h2>{{author.name}}</h2>
-            {{/if}}
-        </div>
-        <div class="content">
-            {{content}}
-        </div>
+            <div class="header">
+                <h1>{{title}}</h1>
+            </div>
+            <div class="content">
+                {{content}}
+            </div>
+        {{/post}}
     </article>
 </main>
