@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css" rel="stylesheet" type="text/css">
+  <link href="assets/stylesheets/style.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="assets/css/highlight/styles/monokai_sublime.css">
+  <script type="text/javascript" src="assets/css/highlight/highlight.pack.js"></script>
+  {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+  <div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+      <!-- Hamburger icon -->
+      <span></span>
+    </a>
+    <div id="menu">
+      <div class="pure-menu pure-menu-open">
+        <a class="pure-menu-heading" href="#">
+          {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+          {{@blog.title}}
+        </a>
+
+        <ul>
+        {{#foreach posts}}
+          <li><a href="{{url}}">{{title}}</a></li>
+        {{/foreach}}
+        </ul>
+      </div>
+    </div>
+
+    <div id="main">
+      {{{body}}}
+    </div>
+  </div>
+  {{ghost_foot}}
+  <script src="assets/javascripts/app.min.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+  </script>
+</body>
+</html>

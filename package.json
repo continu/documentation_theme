@@ -1,0 +1,14 @@
+{
+  "name": "api-docs",
+  "private": true,
+  "dependencies": {
+    "node-sass": "~0.8.1",
+    "gulp-rename": "~0.2.2",
+    "gulp-concat": "~2.1.7",
+    "gulp-sass": "~0.6.0",
+    "gulp": "~3.5.0",
+    "gulp-uglify": "~0.2.0",
+    "gulp-watch": "~0.5.0",
+    "gulp-plumber": "~0.5.6"
+  }
+}

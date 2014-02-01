@@ -1,0 +1,19 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+<main class="content push" role="main">
+    <article class="{{post_class}} push">
+        {{#post}}
+        <div class="header">
+            <h1>{{title}}</h1>
+            {{#if author}}
+                <h2>{{author.name}}</h2>
+            {{/if}}
+        </div>
+        <div class="content">
+            {{content}}
+        </div>
+    </article>
+</main>
