@@ -24,10 +24,7 @@
     </a>
     <div id="menu">
       <div class="pure-menu pure-menu-open">
-        <a class="pure-menu-heading" href="#">
-          {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-          {{@blog.title}}
-        </a>
+        <a class="pure-menu-heading" href="/">{{@blog.title}}</a>
 
         <ul>
         {{#foreach posts}}
