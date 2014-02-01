@@ -13,8 +13,14 @@ h3 span {
   border-bottom-left-radius: 3px;
 }
 h3 span.http-get {
-  background: #2ecc71;
+  background: #92D95F;
 }
 h3 span.http-post {
-  background: #3498db;
+  background: #49C2F2;
+}
+h3 span.http-puts {
+  background: #F2DC6B;
+}
+h3 span.http-delete {
+  background: #F25757;
 }
